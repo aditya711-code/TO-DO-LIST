@@ -1,0 +1,85 @@
+body {
+  background-color: blanchedalmond;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: blanchedalmond;
+}
+input[type="text"] {
+  font-size: 15px;
+}
+.Submit {
+  font: bold;
+}
+h2 {
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.table_Show {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table_Show {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table_Show thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+table > thead {
+  background-color: darkturquoise;
+  text-align: center;
+  padding: 20px;
+}
+/* tr::before {
+  counter-increment: my-sec-counter;
+  content: "Task No" counter(my-sec-counter) ". ";
+} */
+
+.show {
+  counter-reset: serial-number; /* Set the serial number counter to 0 */
+}
+.show td:first-child:before {
+  counter-increment: serial-number; /* Increment the serial number counter */
+  content: counter(serial-number); /* Display the counter */
+}
+input {
+  size: 90;
+}
+.button :hover {
+  background-color: dodgerblue;
+}
+.flex-container {
+  display: flex;
+  background-color: dodgerblue;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container > div {
+  background-color: #e5eff0;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  margin: 2px 1px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

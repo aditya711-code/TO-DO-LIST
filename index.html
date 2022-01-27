@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1><img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp" alt="Check" width="60">TO Do List</h1></nav>
+    <form id="todo" onsubmit="submitfunc()">
+      <div class="flex-container">
+        <div>
+          Enter the task:<input type="text"onfocus="this.value=''" value=""name="fname" size="80" id="task" />
+        
+        </div>
+        <div>
+          Enter the description:<input type="Task_desc" name="lname" size="120" id="task_des"/>
+        </div>
+        <div>
+          Enter the time:<input type="time" name="timeofwork" size="120" id="task_time"/>
+        </div>
+        <div>
+          Enter the date:<input type="Date" name="dname" size="70" id="date" />
+        </div>
+        <button  id="submit" type="button" onclick="Addrow()" value="">Submit</input>
+      </div>
+    </form>
+    <div id="task_display"></div>
+    <script src="index.js"></script>
+    <div id="items" class="my-4">
+      <h2 id="urtask">Your Tasks</h2>
+      <table baorder="4"class="table_Show" id="show">
+          <thead>
+            <tr>
+              <th scope="col">Task No</th>
+              <th scope="col">Task Title</th>
+              <th scope="col">Task Description</th>
+              <th scope="col">Time</th> 
+              <th scope="col">Date</th> 
+              
+            </tr>
+          </thead>
+          <!-- <tbody id="show">
+            <tr>
+              <th id ='fname' scope="row">1</th>
+              <td id='task'>Get some Coffee</td>
+              <td id='task_des'>You need coffee as you are a coder</td> 
+              <td id='date'><button class="btn btn-sm btn-primary">Delete</button></td> 
+            </tr>
+            
+          </tbody> -->
+        </table>
+  </div>
+</div>
+  </body>
+  </body>
+  </body>
+</html>
